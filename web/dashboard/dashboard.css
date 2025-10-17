@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf7e2, #fff9e6); /* verde e amarelo claros */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+
+/* ===== HEADER ===== */
+header {
+  width: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a); /* tons de verde — gorro do Chaves */
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.professor-info {
+  font-size: 1em;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+header h1 {
+  color: #fffde7; /* amarelo claro */
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: 600;
+  background: #fffde7;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  background: #f9fbe7;
+  color: #2e7d32;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== MAIN ===== */
+main {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #8bc34a, #cddc39);
+  border-radius: 10px;
+  color: #fffde7;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-header h2 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  color: #33691e;
+}
+
+.dashboard-header p {
+  color: #f1f8e9;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 0;
+}
+
+.dashboard-header a {
+  text-decoration: none;
+  color: #33691e;
+  font-weight: 600;
+  background: #fffde7;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-header a:hover {
+  background: #f1f8e9;
+  color: #1b5e20;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ===== TABELA ===== */
+.turmas-section {
+  width: 100%;
+  background: #fffef5;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  overflow-x: auto;
+  border-left: 6px solid #ffeb3b; /* detalhe amarelo da vila */
+}
+
+.turmas-section h3 {
+  font-size: 1.6em;
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.turmas-section table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.turmas-section thead {
+  background-color: #4caf50;
+  color: white;
+}
+
+.turmas-section th {
+  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.turmas-section td {
+  padding: 10px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95em;
+  word-wrap: break-word;
+}
+
+.turmas-section tbody tr:hover {
+  background-color: #f1f8e9;
+  transition: background 0.3s ease;
+}
+
+/* ===== BOTÕES ===== */
+.ver-detalhes {
+  padding: 6px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95em;
+}
+
+.ver-detalhes:hover {
+  background-color: #388e3c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Botão de excluir — cor do barril do Chaves */
+.deletar-turma {
+  padding: 10px 20px;
+  background-color: #a0522d; /* marrom barril */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.deletar-turma:hover {
+  background-color: #7b3f00;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.deletar-turma:focus {
+  outline: 3px solid #ffeb3b; /* amarelo destaque */
+}
+
+.deletar-turma:active {
+  transform: translateY(1px);
+}

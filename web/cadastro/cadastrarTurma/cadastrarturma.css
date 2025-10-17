@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e7f8e2, #fff9e6); /* verde e amarelo claros */
+}
+
+h1 {
+  color: #2e7d32; /* verde escuro do gorro */
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  background: #fffdf4; /* tom bege claro */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  border: 2px solid #ffb300; /* amarelo mostarda da camisa */
+}
+
+label {
+  font-weight: 600;
+  color: #3e2723; /* marrom suave — remete às casas da vila */
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  border: 2px solid #a5d6a7; /* verde claro */
+  border-radius: 6px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  background-color: #f9fff8;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50; /* verde vibrante */
+  outline: none;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+button {
+  background-color: #d32f2f; /* vermelho do gorro */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #b71c1c;
+  box-shadow: 0 4px 10px rgba(183, 28, 28, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}

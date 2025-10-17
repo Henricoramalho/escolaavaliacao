@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e2f7e1, #fffbea); /* verde claro + amarelo suave */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #1b5e20; /* verde escuro - referência ao gorro do Chaves */
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+form {
+  background: #fffdf4; /* tom bege claro */
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 3px solid #ffb300; /* amarelo mostarda da camisa */
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #33691e; /* verde médio */
+  margin-bottom: 10px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #a5d6a7; /* verde clarinho */
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  text-align: center;
+  background-color: #fafff8;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50; /* verde mais vivo */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background: #d32f2f; /* vermelho do gorro */
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #b71c1c;
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(179, 30, 30, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
