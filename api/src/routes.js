@@ -5,8 +5,6 @@ const ProfessorController = require("./controllers/ProfessorController");
 const TurmasController = require("./controllers/TurmasController");
 const AtividadesController = require("./controllers/AtividadesController");
 
-
-
 routes.get("/professores", ProfessorController.getProfessores);
 routes.get("/professores/:id", ProfessorController.getProfessorById);
 routes.post("/professores", ProfessorController.createProfessor);
